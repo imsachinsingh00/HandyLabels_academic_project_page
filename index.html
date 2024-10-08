@@ -126,11 +126,7 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
+      <img src="static/images/2.png" alt="HandyLabels Annotation Comparison" style="width:100%; height:auto;">
       <h2 class="subtitle has-text-centered">
         A comparison between a traditional label annotation tool (left) and our HandyLabels system (right). The traditional method requires manual inputs, such as mouse interactions, to label data, making it slow, inefficient, and lacking in real-time capabilities. In contrast, HandyLabels leverages real-time gesture-based annotations, significantly enhancing speed, robustness, and user experience. By enabling intuitive hand gestures for on-the-fly annotation, HandyLabels provides a more efficient and seamless approach to labeling, particularly suited for real-time applications.
       </h2>
@@ -138,6 +134,7 @@
   </div>
 </section>
 <!-- End teaser image -->
+
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -147,7 +144,18 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            The success of machine learning is deeply linked to the availability of high-quality training data, yet retrieving and manually
+labeling new data remains a time-consuming and error-prone process. Traditional annotation tools like LabelStudio often require
+post-processing, where users label data after recording. This cumbersome process leads to inefficiencies, particularly with large
+datasets. In this work, we introduce HandyLabels, a real-time annotation tool that leverages hand gesture recognition to map hand
+signs to labels during live recordings. The application allows users to customize gesture mappings through a web-based interface,
+enabling real-time annotations. To validate the usability of HandyLabels, a user study was conducted with over 50 participants.
+The results suggest that HandyLabels is preferred by the majority of participants compared to traditional annotation tools. To
+ensure the robustness of HandyLabels, we evaluated several hand gesture recognition models on a custom dataset, with and without
+skeleton-based pre-processing. The models were evaluated under challenging conditions (various backgrounds, distances, and devices)
+to stress-test their robustness, with the goal of selecting the most reliable backbone for HandyLabels. Our experiments revealed that
+models incorporating skeletal data, particularly the transformer-based ViT model (the backbone of HandyLabels), exhibited the highest
+robustness.
           </p>
         </div>
       </div>
@@ -157,67 +165,65 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+<!-- Teaser image-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/Diagram.png" alt="HandyLabels Annotation Comparison" style="width:100%; height:auto;">
       <h2 class="subtitle has-text-centered">
-        Fourth image description.
+        This diagram illustrates the complete workflow of the HandyLabels application. (1) The process begins with the landing page
+(Screen 1), where users can set custom labels for hand gestures. (2) Once users proceed to customize their labels, they are presented
+with an interface to define unique gestures such as "happy" or "sad". (3) After labels are set, users can start the real-time gesture
+recognition process, where gestures performed on Screen 1 are annotated as the video plays on Screen 2. (4) The workflow concludes
+with a comprehensive overview of the recorded data, including a gesture data table and a distribution chart, allowing users to visualize
+and export their results.
       </h2>
     </div>
   </div>
-</div>
-</div>
 </section>
-<!-- End image carousel -->
+<!-- End teaser image -->
 
 
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
+<!-- Teaser image-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">User study</h2>
+      <div class="content has-text-justified"></div>
+      <img src="static/images/pie_charts_handylables_bold_with_whitespace-1.png" alt="HandyLabels Annotation Comparison" style="width:100%; height:auto;">
+      <h2 class="subtitle has-text-centered">
+        User preferences for HandyLabels compared to Label Studio. The first pie chart illustrates that the vast majority of users
+found HandyLabels more intuitive than Label Studio, with only a small percentage favoring Label Studio. The second chart reflects
+user preferences for data annotation, with 88.9% of participants indicating they would rather use HandyLabels for annotation tasks.
+The third chart shows that the majority would recommend HandyLabels, highlighting a strong overall preference for HandyLabels.
+      </h2>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
+<!-- End teaser image -->
+
+<!-- Teaser image-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">User study</h2>
+      <div class="content has-text-justified"></div>
+      <img src="static/images/bar_chart_effort_annotation_tool_bold_subtitles-1.png" alt="HandyLabels Annotation Comparison" style="width:100%; height:auto;">
+      <h2 class="subtitle has-text-centered">
+        Comparison of user ratings for setup effort between HandyLabels and Label Studio. The left bar chart shows that most
+participants found Label Studio more challenging to setup, with the majority giving it a difficulty rating of 4 or 5 (on a scale of 1
+to 5, where 5 is the hardest). In contrast, the right bar chart demonstrates that HandyLabels is much easier to setup, with most
+participants rating the effort as 1 or 2, indicating its user-friendly setup process.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser image -->
+
+
+
+
+
 
 
 <!-- Video carousel -->
