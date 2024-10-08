@@ -169,6 +169,7 @@ robustness.
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
+      <h1 class="title has-text-centered">HandyLabels Application</h1>
       <img src="static/images/Diagram.png" alt="HandyLabels Annotation Comparison" style="width:100%; height:auto;">
       <h2 class="subtitle has-text-centered">
         This diagram illustrates the complete workflow of the HandyLabels application. (1) The process begins with the landing page
@@ -184,14 +185,37 @@ and export their results.
 <!-- End teaser image -->
 
 
+<section class="section">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Data Collection</h2>
+    <p>
+      To evaluate the robustness and effectiveness of HandyLabels, a comprehensive dataset was collected under various conditions. 
+      The data collection involved 19 participants who performed predefined hand gestures such as "Fist", "Peace", and "Thumbs Up" in different environments. 
+      Data was collected using three distinct devices (iPhone 14 Pro Max, Sony X1 Camera, and MacBook Air) to simulate real-world scenarios. 
+      The dataset includes gestures recorded from different distances (1 meter, 2 meters, and 3 meters) and against different backgrounds, 
+      ensuring the system could handle environmental variations effectively.
+    </p>
+    <p>
+      The collected dataset was further processed using skeleton-based preprocessing with MediaPipe, extracting 21 hand-knuckle landmarks to enhance gesture recognition accuracy.
+    </p>
+  </div>
+</section>
+
+
+
 <!-- User Study Section -->
 <section class="hero is-light">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <h1 class="title has-text-centered">User Study Overview</h1>
+      <h1 class="title has-text-centered">User Study Overview</h1><br><br>
       <h2 class="subtitle has-text-centered">
         Detailed analysis of user preferences and setup effort comparison between HandyLabels and Label Studio.
       </h2>
+      <p>
+        To assess the usability and effectiveness of HandyLabels, we conducted a user study with over 50 participants. 
+        The study compared HandyLabels with traditional annotation tools like LabelStudio, evaluating criteria such as ease of setup, 
+        intuitiveness, and overall preference for labeling tasks.
+      </p><br>
 
       <!-- Pie Charts: User Preferences -->
       <img src="static/images/pie_charts_handylables_bold_with_whitespace-1.png" alt="User Preferences for HandyLabels vs Label Studio" style="width:100%; height:auto;">
@@ -216,7 +240,16 @@ and export their results.
 <!-- End User Study Section -->
 
 
-
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/2.png" alt="HandyLabels Annotation Comparison" style="width:100%; height:auto;">
+      <h2 class="subtitle has-text-centered">
+        A comparison between a traditional label annotation tool (left) and our HandyLabels system (right). The traditional method requires manual inputs, such as mouse interactions, to label data, making it slow, inefficient, and lacking in real-time capabilities. In contrast, HandyLabels leverages real-time gesture-based annotations, significantly enhancing speed, robustness, and user experience. By enabling intuitive hand gestures for on-the-fly annotation, HandyLabels provides a more efficient and seamless approach to labeling, particularly suited for real-time applications.
+      </h2>
+    </div>
+  </div>
+</section>
 
 
 
